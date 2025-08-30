@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* transform: scale(0.95); */
+    
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    background-image: url(5216699.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+.container {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.card-profile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), rgba(171, 171, 171, 0.4));
+    backdrop-filter: blur(2px);
+    /* height: 380px; */
+    border-radius: 40px;
+    border: 1px solid #fff;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+}
+.card-profile:hover {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.65), rgba(171, 171, 171, 0.55));
+    transition: all 0.3s ease;
+}
+.card-profile img {
+    width: 150px;
+    position: absolute;
+    top: -100px;
+    border-radius: 100%;
+}
+.card-profile h1 {
+    font-size: 64px;
+    margin-top: 50px;
+}
+.card-profile span {
+    font-size: 24px;
+    margin-top: -20px;
+}
+.card-profile p {
+    width: 70%;
+    font-size: 24px;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.card-profile::before {
+    content: " ";
+    position: absolute;
+    top: -105px;
+    width: 160px;
+    height: 160px;
+    background: linear-gradient(135deg, #490DED, #BCA4F7, #CFC8FF, #2EEA99);
+    border-radius: 100%;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.35);
+}
+
+.card-social ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin-top: 30px;
+}
+.card-profile ul li {
+    background: #fff;
+}
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 20%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), rgba(171, 171, 171, 0.4));
+    backdrop-filter: blur(2px);
+    border: 1px solid #fff;
+    text-decoration: none;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+}
+a i {
+    display: inline-block;
+    font-size: 45px;
+    color: #fff;
+}
+button {
+    font-size: 32px;
+    margin-top: 30px;
+    padding: 20px 40px;
+    font-weight: 600;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), rgba(171, 171, 171, 0.4));
+    backdrop-filter: blur(2px);
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 450px;
+    }
+    .card-profile img {
+        width: 120px;
+        top: -75px;
+    }
+    .card-profile::before {
+        width: 130px;
+        height: 130px;
+        top: -80px;
+    }
+    .card-profile h1 {
+        font-size: 48px;
+        margin-top: 45px;
+    }
+    .card-profile span {
+        font-size: 16px;
+        margin-top: -10px;
+    }
+    .card-profile p {
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .card-social ul {
+        margin-top: 20px;
+        gap: 40px;
+    }
+    a {
+        width: 80px;
+        height: 80px;
+    }
+    a i {
+        font-size: 40px;
+    }
+    button {
+        margin-top: 20px;
+        padding: 15px 35px;
+        font-size: 24px;
+    }
+
+}
+@media screen and (max-width: 480px) {
+    .container {
+        width: 300px;
+        margin-top: 10px;
+    }
+    .card-profile {
+        border-radius: 30px;
+    }
+    .card-profile img {
+        width: 90px;
+        top: -50px;
+    }
+    .card-profile::before {
+        width: 100px;
+        height: 100px;
+        top: -55px;
+    }
+    .card-profile h1 {
+        font-size: 32px;
+        margin-top: 45px;
+    }
+    .card-profile span {
+        font-size: 12px;
+        margin-top: -10px;
+    }
+    .card-profile p {
+        font-size: 12px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    .card-social ul {
+        gap: 25px;
+    }
+    a {
+        width: 50px;
+        height: 50px;
+    }
+    a i {
+        font-size: 25px;
+    }
+    button {
+        padding: 10px 25px;
+        font-size: 16px;
+    }
+
+}
+
