@@ -13,7 +13,7 @@ body {
     width: 100%;
     height: 100vh;
     font-family: "Poppins", sans-serif;
-    background-image: url(5216699.png);
+    background-image: url(5216699.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -206,4 +206,5 @@ button {
     }
 
 }
+
 
